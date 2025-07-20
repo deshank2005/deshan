@@ -1,0 +1,38 @@
+.see-more-btn {
+  margin-top: 10px;
+  background: linear-gradient(to right, #ffcc00, #ff00cc);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+.see-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00cc;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #ffcc00;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff00cc;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffcc00;
+  }
+}
+.search-bar input {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+}
